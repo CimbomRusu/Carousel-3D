@@ -1,0 +1,95 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(http://2.bp.blogspot.com/-Jgj5sqDoQRs/Uihk8p1mWRI/AAAAAAAAAus/2ZTRhcNtuBs/s640/Top+10+best+Simple+Awesome+Background+Images+for+Your+Website+or+Blog1.jpg)
+}
+
+.content{
+    width: 400px;
+    perspective: 1000px;
+    margin: 250px 45%;
+    position: relative;
+}
+
+.carousel{
+    width: 50%;
+    position: absolute;
+    animation: rotate 15s linear infinite;
+    transform-style: preserve-3d;
+}
+
+.carousel:hover{
+    animation-play-state: paused;
+    cursor: pointer;
+}
+
+@keyframes rotate{
+    from{
+        transform: rotateY(0deg);
+    }
+    to{
+        transform: rotateY(360deg);
+    }
+}
+
+.carousel div{
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    position: absolute;
+    box-shadow: 0px 0px 20px black;
+}
+
+.carousel div:nth-child(1){
+    transform: rotateY(0deg) translateZ(400px);
+}
+
+.carousel div:nth-child(2){
+    transform: rotateY(36deg) translateZ(400px);
+}
+
+.carousel div:nth-child(3){
+    transform: rotateY(72deg) translateZ(400px);
+}
+
+.carousel div:nth-child(4){
+    transform: rotateY(108deg) translateZ(400px);
+}
+
+.carousel div:nth-child(5){
+    transform: rotateY(144deg) translateZ(400px);
+}
+
+.carousel div:nth-child(6){
+    transform: rotateY(180deg) translateZ(400px);
+}
+
+.carousel div:nth-child(7){
+    transform: rotateY(216deg) translateZ(400px);
+}
+
+.carousel div:nth-child(8){
+    transform: rotateY(252deg) translateZ(400px);
+}
+
+.carousel div:nth-child(9){
+    transform: rotateY(288deg) translateZ(400px);
+}
+
+.carousel div:nth-child(10){
+    transform: rotateY(324deg) translateZ(400px);
+}
+
+.carousel img{
+    width: 100%;
+    height: 100%;
+    transition: all 0.3s linear;
+}
+
+.carousel img:hover{
+    transform: scale(1.2);
+}
